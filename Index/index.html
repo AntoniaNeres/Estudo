@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilize o contêiner flex */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-around;
+            height: 400px;
+            /* Defina uma altura para o contêiner */
+            border: 2px solid #333;
+        }
+
+        /* Estilize os itens flex dentro do contêiner */
+        .item{
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+            margin: 10px;
+        }
+
+        /* Aplique alinhamento vertical aos itens */
+        .item:nth-child(odd) {
+            align-self: flex-start;
+        }
+        /* Aplique alinhamento horizontal aos itens */
+        .item:nth-child(3n) {
+            justify-self: flex-end;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+</div>
+</body>
+</html>
