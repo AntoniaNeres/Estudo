@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula01 Flex-Box</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            border: 1px solid black;
+            width: 90%;
+            height: 200px;
+            display: flex;
+            flex-flow: row wrap;
+            /*flex-wrap: wrap;
+            flex-direction: row;*/
+         
+        }
+        .container2 {
+            border: 1px solid black;
+            width: 50%;
+            height: 100px;
+            display: flex;
+            flex-flow: row wrap;
+            
+        }
+         /*justify content */
+        .justify-center {
+          justify-content: center;
+        }
+    
+        .justify-space {
+          justify-content: space-between;
+        }
+
+        .justify-around {
+          justify-content: space-around;
+        }
+
+        .aling-center {
+          align-items: center;
+        }
+
+        /*Align Content*/
+        .aling-content-start {
+            align-content: start;
+        }
+
+        .aling-content-center {
+            align-content: center;
+        }
+
+        .aling-content-end {
+            align-content: end;
+        }
+
+        .aling-content-stretch {
+            align-content: stretch;
+        }
+
+        .container .item {
+            border: 1px solid red;
+            width: 20px;
+            height: 30px;
+            padding: 5px;
+        }
+
+        .container2 .item2 {
+            border: 1px solid red;
+            width: 30px;
+            height: 20px;
+            padding: 5px;
+        }
+
+
+        /* Order */
+        .item2:nth-of-type(1){
+            order: 2
+        }
+
+        .item2:nth-of-type(2){
+            order: 3
+        }
+
+        .item2:nth-of-type(3){
+            order: 1
+        }
+
+        .item2:nth-of-type(4){
+            order: 4
+        }
+
+        .item2:nth-of-type(5){
+            order: 5
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Aula01 - Flexbox</h1>
+
+    <div class="container justify-around align-center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+
+    <h2>Align-Content</h2>
+
+    <div class="container2 aling-content-center">
+        <div class="item2">1</div>
+        <div class="item2">2</div>
+        <div class="item2">3</div>
+        <div class="item2">4</div>
+        <div class="item2">5</div>
+       
+    </div>
+    
+</body>
+</html>

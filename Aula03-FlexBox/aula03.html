@@ -20,15 +20,19 @@
             flex-direction: row;*/
            
         }
-        .justify.center {
+        .justify-center {
           justify-content: center;
         }
     
-        .justify.space {
+        .justify-space {
           justify-content: space-between;
         }
 
-        .aling.center {
+        .justify-around {
+          justify-content: space-around;
+        }
+
+        .aling-center {
           align-items: center;
         }
 
@@ -38,18 +42,35 @@
             height: 30px;
             padding: 5px;
         }
+
+        .grow_1 {
+            flex-grow: 1;
+        }
+
+        .grow_2 {
+            flex-grow: 2;
+        }
+
+        .grow_3 {
+            flex-grow: 3;
+        }
+
+        .basis_auto {
+            flex-grow: 1;
+            flex-basis: auto;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Aula01 - Flexbox</h1>
+    <h1>Aula03 - Flexbox - Itens</h1>
 
-    <div class="container justify-space align-center">
-        <div class="item">1</div>
+    <div class="container justify-around align-center">
+        <div class="item basis_auto">1</div>
         <div class="item">2</div>
         <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
+        <!--<div class="item">4</div>
+        <div class="item">5</div> -->
     </div>
     
 </body>
