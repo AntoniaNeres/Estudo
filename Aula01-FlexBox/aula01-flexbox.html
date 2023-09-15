@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula01 Flex-Box</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            border: 1px solid black;
+            width: 90%;
+            height: 200px;
+            display: flex;
+            flex-flow: row wrap;
+            /*flex-wrap: wrap;
+            flex-direction: row;*/
+           
+        }
+        .justify-center {
+          justify-content: center;
+        }
+    
+        .justify-space {
+          justify-content: space-between;
+        }
+
+        .justify-around {
+          justify-content: space-around;
+        }
+
+        .aling-center {
+          align-items: center;
+        }
+
+        .container .item {
+            border: 1px solid red;
+            width: 20px;
+            height: 30px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Aula01 - Flexbox</h1>
+
+    <div class="container justify-around align-center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    
+</body>
+</html>
