@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+header{
+    background-color: #140f07;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #162643;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+h2 {
+    color:  #162643;
+    text-align: center;
+    margin-bottom: 20px;
+}
+ 
+
+.image img {
+    background-image: url("./carros/01.png");
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+
+ 
+ footer {
+    background-color:#4660a2;
+    color: white;
+    text-align: center;
+    padding: 10px;
+ }
