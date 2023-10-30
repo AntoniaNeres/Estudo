@@ -1,0 +1,14 @@
+{
+  "name": "aula01-node",
+  "version": "1.0.0",
+  "description": "PRÁTICA NODE JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Antonia Neres",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
