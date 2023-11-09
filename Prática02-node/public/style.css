@@ -1,0 +1,27 @@
+html, body {
+    min-height: 100%;
+}
+body {
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0px;
+    font-family: open sans,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #313131;
+}
+h1 {
+    font-weight: 600;
+    font-size: 45px;
+    margin: 0 0 5px;
+    line-height: 75px;
+}
+h4 {
+    font-weight: 500;
+    margin: 10px 0px 10px 0px;
+    font-size: 16px;
+    line-height: 30px;
+}
+.header {
+    margin: 120px;
+    text-align: center;
+}
