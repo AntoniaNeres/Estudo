@@ -21,10 +21,10 @@ app.get('/users/add', (req, res) => {
     })
     
     app.post('/users/save', (req, res) => {
-    const name = req.body.name
-    const age = req.body.age
-    
-    const user = { name: name, age: age }
+    const name = req.body.name;
+    const age = req.body.age;
+    const email = req.body.email;
+    const user = { name: name, email: email, age: age }
     res.render('viewuser', { user: user })
     
     })

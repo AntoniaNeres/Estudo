@@ -1,9 +1,18 @@
-<h1>Adicionar Usuário</h1>
+<div class="container-fluid col-6">
 <form action="/users/save" method="post">
-<div>
-<input type="text" name="name" placeholder="Digite seu nome">
-<input type="text" name="age" placeholder="Digite idade">
-<input type="submit" value="Cadastrar" />
+
+<div class="form-group col-5 ">
+<label for="nome">Nome:</label>
+<input type="text" class="form-control" name="name" id="nome" placeholder="Digite seu nome...">
 </div>
+<div class="form-group col-3">
+<label for="idade">Idade:</label>
+<input type="text" class="form-control" name="age" id="idade" placeholder="Digite sua idade...">
+</div>
+<div class="form-group col-7">
+<label for="email">E-mail:</label>
+<input type="text" class="form-control" name="email" id="email" placeholder="Digite seu email...">
+</div>
+<button type="submit" class="btn btn-primary">Enviar</button>
 </form>
-<a href="/">Home</a>
+</div>
