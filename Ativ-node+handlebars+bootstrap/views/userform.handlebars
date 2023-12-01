@@ -1,0 +1,34 @@
+{{#if auth}}
+<h1>Adicionar Usuário</h1>
+
+<form action="/users/save" method="post">
+<div class="col-md-4 ">
+<label for="marca" class="form-label">Marca:</label>
+<input type="text" name="marca" class="form-control">
+</div>
+<div class="col-md-4 ">
+<label for="potenMotor" class="form-label">Potência do Motor:</label>
+<input type="text" class="form-control" name="potenMotor">
+</div>
+<div class="col-md-4 ">
+<label for="name" class="form-label">Nome:</label>
+<input type="text" name="name" class="form-control">
+</div>
+<div class="col-md-4 ">
+<label for="cor" class="form-label">Cor:</label>
+<input type="text" class="form-control" name="cor">
+</div>
+<div class="col-md-4 ">
+<label for="anoFabri" class="form-label">Ano de Fabricação:</label>
+<input type="text" class="form-control" name="anoFabri">
+</div>
+<br>
+<div class="col-12">
+<button type="submit" class="btn btn-primary">Sign in</button>
+</div>
+</form>
+<br>
+<div class="col-3">
+<a href="/">Home</a>
+</div>
+{{/if}}
