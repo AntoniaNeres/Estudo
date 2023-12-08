@@ -1,0 +1,22 @@
+{{#if auth}}
+  <h1>Adicionar Usuário</h1>
+
+  <form action="/users/save" method="post">
+    <div class="col-md-4">
+      <label for="name" class="form-label">Nome:</label>
+      <input type="text" name="name" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label for="age" class="form-label">Idade:</label>
+      <input type="text" name="age" class="form-control" />
+    </div>
+    <br />
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </form>
+  <br />
+  <div class="col-3">
+    <a href="/">Home</a>
+  </div>
+{{/if}}
