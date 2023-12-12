@@ -1,9 +1,32 @@
-<h1>Adicionar Usuário</h1>
-<form action="/users/save" method="post">
-<div>
-<input type="text" name="name" placeholder="Digite seu nome">
-<input type="text" name="age" placeholder="Digite idade">
-<input type="submit" value="Cadastrar" />
+<div class="container">
+    <form action="/users/save" method="post">
+
+    <div class="row">
+
+        <div class="col-4">
+
+            <label>Nome:</label>
+            <input type="text" class="form-control" name="name" id="nome">
+    </div>
+    <div class="col-2">
+        <label>Data Nasc: </label>
+        <input type="date" class="form-control" name="dataNasc" id="dataNasc">
+    </div>
 </div>
+<div class="row">
+    <div class="col-5">
+        <label>E-mail</label>
+        <input type="email" class="form-control" name="email">
+    </div>
+</div>
+<div class="col-2">
+    <label for="">Funcionário</label>
+    <select class="form-control" name="func">
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select>
+</div>
+<br>
+<button type="submit" class="btn btn-primary">Enviar</button>
 </form>
-<a href="/">Home</a>
+</div>

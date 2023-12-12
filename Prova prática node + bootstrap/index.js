@@ -21,11 +21,13 @@ app.get('/users/add', (req, res) => {
     })
     
     app.post('/users/save', (req, res) => {
-    const name = req.body.name;
-    const dataNasc = req.body.dataNasc;
-    const email = req.body.email;
-    const func = req.body.func;
-    const user = { name: name, email: email, dataNasc: dataNasc, func: func}
+    const nameprod = req.body.name;
+    const nameforn = req.body.name;
+    const dataComp = req.body.dataComp;
+    const valorcomp = req.body.valorcomp;
+    const valorvend = req.body.valorvend;
+    const categ = req.body.categ;
+    const user = { name: nameprod, name: nameforn, dataComp: dataComp, valorcomp: valorcomp, valorvend: valorvend, categ: categ}
     res.render('viewuser', { user: user })
     
     })
